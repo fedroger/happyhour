@@ -6,11 +6,11 @@
 
 - understand  main tasks of MEC, especially the python program [edgecloud.py](https://git.comnets.net/public-repo/comnetsemu/-/tree/master/app/realizing_mobile_edge_clouds/edgelcoud) 
 
-- create docker images with two different dockerfiles and conduct the emulation based on [dockerfile](https://git.comnets.net/public-repo/comnetsemu/-/blob/master/app/realizing_mobile_edge_clouds/Dockerfile.mec_test), the result called *version1*
+- create docker images with two different dockerfiles and conduct the emulation based on [dockerfile](https://git.comnets.net/public-repo/comnetsemu/-/blob/master/app/realizing_mobile_edge_clouds/Dockerfile.mec_test), the result called [version1](https://github.com/fedroger/happyhour/blob/main/version1)
 
-- combine the dockerfiles together and get a new emulation result called *version2*
+- combine the dockerfiles together and get a new emulation result called [version2](https://github.com/fedroger/happyhour/blob/main/version2)
 
-- compare and analyze the emulation results
+- compare and analyze the emulation results [comparison](https://github.com/fedroger/happyhour/blob/main/comparison)
 
 ### 2. problems to solve
 
