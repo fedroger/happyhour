@@ -1,0 +1,294 @@
+*** Adding Controller
+
+*** Adding Hosts
+
+*** Adding Switches
+*** switch1 : ('ovs-vsctl show',)
+73c3a11c-ba4e-40ae-86fc-af78f1ed0e89
+    Bridge switch1
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch1
+            Interface switch1
+                type: internal
+    ovs_version: "2.13.1"
+*** switch11 : ('ovs-vsctl show',)
+73c3a11c-ba4e-40ae-86fc-af78f1ed0e89
+    Bridge switch11
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch11
+            Interface switch11
+                type: internal
+    Bridge switch1
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch1
+            Interface switch1
+                type: internal
+    ovs_version: "2.13.1"
+*** switch12 : ('ovs-vsctl show',)
+73c3a11c-ba4e-40ae-86fc-af78f1ed0e89
+    Bridge switch11
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch11
+            Interface switch11
+                type: internal
+    Bridge switch12
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch12
+            Interface switch12
+                type: internal
+    Bridge switch1
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch1
+            Interface switch1
+                type: internal
+    ovs_version: "2.13.1"
+*** switch111 : ('ovs-vsctl show',)
+73c3a11c-ba4e-40ae-86fc-af78f1ed0e89
+    Bridge switch11
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch11
+            Interface switch11
+                type: internal
+    Bridge switch12
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch12
+            Interface switch12
+                type: internal
+    Bridge switch111
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch111
+            Interface switch111
+                type: internal
+    Bridge switch1
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch1
+            Interface switch1
+                type: internal
+    ovs_version: "2.13.1"
+*** switch112 : ('ovs-vsctl show',)
+73c3a11c-ba4e-40ae-86fc-af78f1ed0e89
+    Bridge switch11
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch11
+            Interface switch11
+                type: internal
+    Bridge switch12
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch12
+            Interface switch12
+                type: internal
+    Bridge switch111
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch111
+            Interface switch111
+                type: internal
+    Bridge switch112
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch112
+            Interface switch112
+                type: internal
+    Bridge switch1
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch1
+            Interface switch1
+                type: internal
+    ovs_version: "2.13.1"
+*** switch121 : ('ovs-vsctl show',)
+73c3a11c-ba4e-40ae-86fc-af78f1ed0e89
+    Bridge switch11
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch11
+            Interface switch11
+                type: internal
+    Bridge switch121
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch121
+            Interface switch121
+                type: internal
+    Bridge switch12
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch12
+            Interface switch12
+                type: internal
+    Bridge switch111
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch111
+            Interface switch111
+                type: internal
+    Bridge switch112
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch112
+            Interface switch112
+                type: internal
+    Bridge switch1
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch1
+            Interface switch1
+                type: internal
+    ovs_version: "2.13.1"
+*** switch122 : ('ovs-vsctl show',)
+73c3a11c-ba4e-40ae-86fc-af78f1ed0e89
+    Bridge switch122
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch122
+            Interface switch122
+                type: internal
+    Bridge switch11
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch11
+            Interface switch11
+                type: internal
+    Bridge switch121
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch121
+            Interface switch121
+                type: internal
+    Bridge switch12
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch12
+            Interface switch12
+                type: internal
+    Bridge switch111
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch111
+            Interface switch111
+                type: internal
+    Bridge switch112
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch112
+            Interface switch112
+                type: internal
+    Bridge switch1
+        Controller "tcp:127.0.0.1:6633"
+        fail_mode: secure
+        Port switch1
+            Interface switch1
+                type: internal
+    ovs_version: "2.13.1"
+
+*** Adding Links
+(200ms delay) (200ms delay) (50ms delay) (50ms delay) (10ms delay) (10ms delay) (10ms delay) (10ms delay) (10ms delay) (10ms delay) (100ms delay) (100ms delay) (150ms delay) (150ms delay) (200ms delay) (200ms delay) (250ms delay) (250ms delay) 
+*** Starting Network
+*** Configuring hosts
+client1 probe1 server1 server2 server3 server4 
+*** Starting controller
+controller1 
+*** Starting 7 switches
+switch1 (200ms delay) (50ms delay) (10ms delay) switch11 (10ms delay) (10ms delay) (10ms delay) switch12 switch111 (10ms delay) (100ms delay) (150ms delay) switch112 (10ms delay) (200ms delay) (250ms delay) switch121 switch122 ...(200ms delay) (50ms delay) (10ms delay) (10ms delay) (10ms delay) (10ms delay) (10ms delay) (100ms delay) (150ms delay) (10ms delay) (200ms delay) (250ms delay) 
+*** Ping: testing ping reachability
+client1 -> probe1 server1 server2 server3 server4 
+probe1 -> client1 server1 server2 server3 server4 
+server1 -> client1 probe1 server2 server3 server4 
+server2 -> client1 probe1 server1 server3 server4 
+server3 -> client1 probe1 server1 server2 server4 
+server4 -> client1 probe1 server1 server2 server3 
+*** Results: 0% dropped (30/30 received)
+
+*** Adding Docker Containers
+client 1 : 
+starting client, 
+
+probe 1 : 
+starting probing agent
+
+probing server 1 : 
+starting server
+
+probing server 2 : 
+starting server
+
+probing server 3 : 
+starting server
+
+probing server 4 : 
+starting server
+
+
+
+*** Await REST instruction from Controller
+NEW SERVER 00:00:00:00:01:01 1
+New container : 
+ on server1
+NEW SERVER 00:00:00:00:01:02 2
+removing container
+New container : 
+ on server2
+NEW SERVER 00:00:00:00:01:01 1
+removing container
+New container : 
+ on server1
+NEW SERVER 00:00:00:00:01:02 2
+removing container
+New container : 
+ on server2
+NEW SERVER 00:00:00:00:01:01 1
+removing container
+New container : 
+ on server1
+NEW SERVER 00:00:00:00:01:02 2
+removing container
+New container : 
+ on server2
+NEW SERVER 00:00:00:00:01:01 1
+removing container
+New container : 
+ on server1
+NEW SERVER 00:00:00:00:01:02 2
+removing container
+New container : 
+ on server2
+NEW SERVER 00:00:00:00:01:01 1
+removing container
+New container : 
+ on server1
+NEW SERVER 00:00:00:00:01:04 4
+removing container
+New container : 
+ on server4
+NEW SERVER 00:00:00:00:01:03 3
+removing container
+New container : 
+ on server3
+
+*** Removing Docker Containers
+
+*** Stopping Network
+*** Stopping 1 controllers
+controller1 
+*** Stopping 9 links
+.........
+*** Stopping 7 switches
+switch1 switch11 switch12 switch111 switch112 switch121 switch122 
+*** Stopping 6 hosts
+client1 probe1 server1 server2 server3 server4 
+*** Done
+Stop 1 containers in the App container queue: server_container
+stud@stud-ThinkPad-T470s:~/comnetsemu/app/realizing_mobile_edge_clouds$ 
+
