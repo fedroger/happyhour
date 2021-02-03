@@ -22,5 +22,8 @@
 ~~~
 ~~~
 今天的两个程序分别为：
+[UDP在labview端，太大采样数不行.py](https://github.com/fedroger/happyhour/blob/main/UDP%E5%9C%A8labview%E7%AB%AF%EF%BC%8C%E5%A4%AA%E5%A4%A7%E9%87%87%E6%A0%B7%E6%95%B0%E4%B8%8D%E8%A1%8C.py)
+[UDP在PC端，太大采样数不行.py](https://github.com/fedroger/happyhour/blob/main/UDP%E5%9C%A8PC%E7%AB%AF%EF%BC%8C%E5%A4%AA%E5%A4%A7%E9%87%87%E6%A0%B7%E6%95%B0%E4%B8%8D%E8%A1%8C.py)
+
 
 ~~~
