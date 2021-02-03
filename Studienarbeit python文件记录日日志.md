@@ -12,18 +12,20 @@
 ~~~
 ~~~ 
 今天只完成了初步工作，能做到他俩之间彼此通信，互相发送字符串。名字分别是：
-[UDP在LabView端.py](https://github.com/fedroger/happyhour/blob/main/UDP%E5%9C%A8LabView%E7%AB%AF.py)
-[UDP在PC端.py](https://github.com/fedroger/happyhour/blob/main/UDP%E5%9C%A8PC%E7%AB%AF.py)
 ~~~
+[UDP在LabView端.py] (https://github.com/fedroger/happyhour/blob/main/UDP%E5%9C%A8LabView%E7%AB%AF.py)
+[UDP在PC端.py] (https://github.com/fedroger/happyhour/blob/main/UDP%E5%9C%A8PC%E7%AB%AF.py)
+
 ## 2021年2月3日晚
 ~~~
 完成了昨天需要的功能，存在一个问题：
-当需要采样的个数小于1000或1000左右，程序完美运行，太大时LabView端成功生成文件并保存，但是PC端接受总是不成功。强制restart kernel后，文件出现在了对应目录里，但是只有部分数据。比如要求5000个采样复数，csv文件里只有1000多，但这种情况下，文件大小都是一样的，均为64kB，正好是UDP所接受的最大数据量，但不知道原因，因为编的时候已经考虑到这种问题所以是把原文件切片了。
+当需要采样的个数小于1000或1000左右，程序完美运行，太大时LabView端成功生成文件并保存，但是PC端接受总是不成功。
+强制restart kernel后，文件出现在了对应目录里，但是只有部分数据。比如要求5000个采样复数，csv文件里只有1000多，
+但这种情况下，文件大小都是一样的，均为64kB，正好是UDP所接受的最大数据量，但不知道原因，因为编的时候已经考虑到这
+种问题所以是把原文件切片了。
 ~~~
 ~~~
 今天的两个程序分别为：
+~~~
 [UDP在labview端，太大采样数不行.py](https://github.com/fedroger/happyhour/blob/main/UDP%E5%9C%A8labview%E7%AB%AF%EF%BC%8C%E5%A4%AA%E5%A4%A7%E9%87%87%E6%A0%B7%E6%95%B0%E4%B8%8D%E8%A1%8C.py)
 [UDP在PC端，太大采样数不行.py](https://github.com/fedroger/happyhour/blob/main/UDP%E5%9C%A8PC%E7%AB%AF%EF%BC%8C%E5%A4%AA%E5%A4%A7%E9%87%87%E6%A0%B7%E6%95%B0%E4%B8%8D%E8%A1%8C.py)
-
-
-~~~
