@@ -35,7 +35,7 @@ pc.connect(labv_addr)
 buffersize = 32*1024
 SEPERATOR = "<SEPERATOR>"
 
-request = input("please input sampling number:  ")
+request = input("please input command and corresponding sampling number :  ")
 message = bytes(request, "utf-8")
 pc.send(message)
 

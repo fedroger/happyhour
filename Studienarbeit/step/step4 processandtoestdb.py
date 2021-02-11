@@ -27,18 +27,18 @@ collection26 = db2["AP06"]
 
 
 #!!!extract datas from db1, process datas with pandas and then import into db2
-result = collection12.find_one({'time': '20210205002153',
+result = collection12.find_one({'time': '20210211181516',
                                 'position' : '(1,2)'})
 y = pickle.loads(result['I/Qsamples'])
 #z = pd.DataFrame(y)
-z=y.reshape(5000,)
+z=y.reshape(2021,)
 print(z)
 
 #!!!channel estimation
 SF = 8
 sf = 2**SF
 a = np.arange(sf)
-c = np.arange(5000-sf+1) 
+c = np.arange(2021-sf+1) 
 '有效数据个数'
 #print(a)
 f1=[]
@@ -48,7 +48,7 @@ for i in range(sf):
 b =np.abs((np.correlate(z, f1, mode='valid')))/(5*5*sf)
 #print(b)
 plt.figure(figsize=(40, 20))
-plt.xlim(0,5000-sf+1)
+plt.xlim(0,2021-sf+1)
 plt.ylim(b.min(),b.max())
 plt.title('cross-correlation')
 plt.stem(c,b,use_line_collection=(True)) 
@@ -71,7 +71,7 @@ print(attenuation_est)
 #!!! save the results in estimation database
 dl_est='{}'.format(delay_estimation)
 at_est='{}'.format(attenuation_est)
-label = {"time":'20210205002153', "position": "(1,2)", 
+label = {"time":'20210211181516', "position": "(1,2)", 
          "delay estimation": dl_est, 
          "attenuation estimation":at_est}
 collection22.insert_one(label)

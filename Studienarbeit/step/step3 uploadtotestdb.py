@@ -15,14 +15,14 @@ collection14 = db1["AP4"]
 collection15 = db1["AP5"]
 collection16 = db1["AP6"]
 
-tm = '20210205002153'
-sampling_number = '5000'
+tm = '20210211181516'
+sampling_number = '2021'
 position = '(1,2)'
 # !!!load .csv file and convert it into numpy array in specific shape 
-dataload = np.loadtxt('G:\saved data\ 5000 20210205002153.csv', 
+dataload = np.loadtxt('G:\saved data\ 2021 20210211181516.csv', 
                       dtype='str', delimiter=',')
 dataconvert = dataload.astype(np.complex64)
-datas = dataconvert.reshape(5000,1)
+datas = dataconvert.reshape(2021,1)
 #print(datas)
 
 
